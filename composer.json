@@ -1,0 +1,33 @@
+{
+    "name": "Freya/Freya",
+    "description": "Freya PHP, the extensible PHP micro framework",
+    "version": "1.0.0-dev",
+    "keywords": ["framework","freya"],
+    "homepage": "http://freya.alexpriebe.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Priebe",
+            "email": "hi@alexpriebe.com",
+            "homepage": "http://www.alexpriebe.com/"
+        }
+    ],
+    "require": {
+        "Pimple/Pimple": "~2.1",
+        "Patchwork/UTF8": "~1.1",
+        "monolog/monolog": "~1.10",
+        "filp/whoops": "1.1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1"
+    },
+    "suggest": {
+        "ext-mcrypt": "Required for HTTP cookie encryption"
+    },
+    "autoload": {
+        "psr-0": { "Freya\\": "app/" }
+    },
+	"config": {
+		"preferred-install": "dist"
+	}
+}
